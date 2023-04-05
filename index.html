@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Codificador do Brandon</title>
+</head>
+<body>
+    <body>
+        <main class="container">
+          <h1>SIGILO DO BRANDON</h1>
+
+            <label for="mensagem"></label>
+            <textarea id="mensagem" cols="60" rows="9" placeholder = "Escreva a mensagem a ser codificada"></textarea>
+      
+            <select name="codigo" class="select" id="codigo">
+              <option value="" disabled selected>Qual será o tipo de criptografia?</option>
+              <option value="base64">Base64</option>
+              <option value="cesar">Cifra de César</option>
+            </select>
+      
+            <div class="divChave">
+              <label for="chave">Qual será o incremento? </label>
+              <input type="number" id="chave" value="1" max="26" />
+            </div>
+      
+            <div class="radioCod">
+              <div class="divRadio">
+                <input type="radio" name="cod" class="radio" id="cod" />
+                <label for="codificar">CODIFICAR</label>
+              </div>
+      
+              <div class="divRadio">
+                <input type="radio" name="cod" class="radio" id="decod" />
+                <label for="decodificar">DECODIFICAR</label>
+              </div>
+            </div>
+            <button id="botaoResultado">
+                <p>CODIFICAR MENSAGEM</p>
+              </button>
+            <div>
+              <label for="resultado"></label>
+              <textarea name="resultado" id="resultado" cols="60" rows="9" readonly placeholder = "Mensgem criptografada"></textarea>
+            </div>
+
+            <div class="logos"> 
+
+              <a href="https://github.com/PoisonBoy69"><img src="./Images/githublogo.png" alt="git hub" width="50px" height="50px"></a>
+              <a href="https://www.linkedin.com/in/brandon-jesus-831293255/"><img src="./Images/linkedinlogopng.png" alt="linked in" width="50px" height="50px"></a>
+  
+          </div>
+          
+        </main>
+    <br>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
